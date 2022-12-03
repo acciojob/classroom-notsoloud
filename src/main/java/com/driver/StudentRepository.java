@@ -47,11 +47,11 @@ public class StudentRepository {
     public List<String> findStudentsFromTeacher(String teacher){
         List<String> studentsList = new ArrayList<String>();
         if(teacherStudentMapping.containsKey(teacher)) studentsList = teacherStudentMapping.get(teacher);
-        return studentsList;
+        return null;
     }
 
     public List<String> findAllStudents(){
-        return new ArrayList<>(studentMap.keySet());
+        return null;
     }
 
     public void deleteTeacher(String teacher){
